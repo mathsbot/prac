@@ -1,0 +1,21 @@
+Practical :4
+clc;clear;
+X=[1 2 5 10]
+Y=[-2 -20 -98 52]
+n=length(X)
+x=9
+L=0
+disp('the value of x and y are given as follows',X,Y)
+for i=1:n
+N=1;D=1;
+for j=1:n
+if(i==j)
+continue;
+else
+N=N*(x-X(j));
+D=D*(X(i)-X(j));
+end
+end
+L=L+(N/D)*Y(i);
+end
+printf('\tThe value of function at x=%.2f is =%.4f',x,L)

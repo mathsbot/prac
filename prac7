@@ -1,0 +1,15 @@
+Practical :7
+clc;clear;
+deff('x=f1(y,z)','x=(5-y-z)/3')
+deff('y=f2(x,z)','y=(5-x+z)/5')
+deff('z=f3(x,y)','z=(10-2*y-x)/7')
+x=0
+y=0
+z=0
+n=10
+for i=1:n
+x=f1(y,z)
+y=f2(x,z)
+z=f3(x,y)
+printf('\nthe solution of system after %dth iteration is x=%0.3f,y=%0.3f and z=%0.3f',i,x,y,z)
+end

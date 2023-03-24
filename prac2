@@ -1,0 +1,16 @@
+Practical :2
+clc;clear;
+deff('y=f(x)','y=x^3-4*x-9')
+a=2
+b=3
+n=8
+printf('The root lies between %.1f and %.1f',a,b)
+for i=1:n
+c=(f(a)*b-f(b)*a)/(f(a)-f(b))
+if(f(a)*f(c)<0) then
+b=c
+else
+a=c
+end
+printf('\n\tThe %dth Root of equation is %0.3f',i,c)
+end

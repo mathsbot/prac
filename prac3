@@ -1,0 +1,10 @@
+Practical :3
+clc;clear;
+deff('y=f(x)','y=x^3-3*x-5')
+deff('y=g(x)','y=3*x^2-3')
+a=4
+n=10
+for i=1:n
+a=a-(f(a)/g(a))
+printf('\n\tThe %dth Root of equation is %f',i,a)
+end

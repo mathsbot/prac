@@ -1,0 +1,15 @@
+Practical no: 9
+clc;clear;
+deff('df=f(x,y)','df=x*x+x*y')
+x=1
+y=5
+h=0.1
+n=5
+for i=1:n
+ k1=h*f(x,y)
+ k2=h*f(x+h/2,y+k1/2)
+ k=(k1+k2)/2
+ x=x+h
+ y=y+k
+ printf('\nthe value of y at %.2f is = %.3f',x,y)
+end
